@@ -1,0 +1,17 @@
+/* body {margin:0 auto;} */
+/* body {
+    margin:50px 0px; padding:0px;
+    text-align:center;
+    } */
+select {
+	color: #000000;
+	background-color: #E5E4E2
+}
+textarea {
+	color: #000000;
+	background-color: #E5E4E2
+}
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #E5E4E2
+}

@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>http://lets-chat.rhcloud.com</title>
+<script language="javascript" src="Chat.js"></script>
+<link rel="stylesheet" href="Styling.css">
+<!-- <style type="text/css">
+This is if you want the CSS code here.
+</style> -->
+</head>
+<body valign="center">
+	<!-- <form onkeydown="return getElementById('text_msg').click();"> -->
+	<!-- <form onsubmit="searchKeyPress(event);"> -->
+	<form>
+		<table>
+			<tr>
+				<!-- <td><h1>&nbsp;</h1></td> -->
+				<td colspan="2" align=center><h1>Let's Chat</h1></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td><label>Chatters:</label></td>
+				<td><label>Message Board:</label></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td><select name="current_users" id="users" size="5"
+					multiple="multiple">
+						<!--option value="text1111">text1</option>
+						<option value="text2222" />text2</option>
+						<option value="text3333">text3</option>
+						<option value="text4444">text4</option>
+						<option value="text5555">text5</option-->
+				</select></td>
+				<td><textarea id="msg_board" rows="5" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td><label>Enter your message here:</label></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<!-- <td><input type="text" id="msg" onclick="javascript:sendMessage()"></td> -->
+				<td><input type="text" id="msg"
+					onkeypress="return searchKeyPress(event);" /></td>
+				<td><input type="button" id="send"
+					onclick="javascript:sendMessage()" value="Send"></td>
+			</tr>
+			<tr>
+				<td><input type="button" onclick="javascript:logout()"
+					value="Leave"></td>
+			</tr>
+			<!-- tr>
+				<td><select name="test_select" id="tests" multiple="multiple">
+				</select></td>				
+			</tr-->
+		</table>
+		<input type="hidden" id="user_hidden">
+	</form>
+</body>
+<script type="text/javascript">
+	whoryou();
+	checkAvailableUsers();
+	checkMessages();
+	/* document.onkeypress = enter;
+	function enter(e){
+	if (e.which == 13){sendform()}
+	}
+
+	//Form to send
+	function sendform(){
+	alert("document.forms[0].submit()");
+	}  */
+</script>
+</html>
